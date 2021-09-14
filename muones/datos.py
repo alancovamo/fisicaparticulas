@@ -29,10 +29,10 @@ g=g1.join(g2)
 
 g = g.astype(float)
 g.rename(columns= {g.columns[0]: 'masa',
-                   g.columns[1]: 'momento en z',
-                   g.columns[2]: 'momento transversal',
-                   g.columns[3]: 'Dist. angular $\phi$',
-                   g.columns[4]: 'Dist. angular $\eta$',
+                   g.columns[1]: 'px',
+                   g.columns[2]: 'py',
+                   g.columns[3]: 'pz',
+                   g.columns[4]: 'E',
     },inplace=True)
 g.to_csv('datosprocesados.csv')
 
