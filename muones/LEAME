@@ -18,4 +18,4 @@
 
 Dependencias necesarias: numpy, pandas
 
-Este programa es solo para muones.
+Este programa es solo para muones. Si quieres filtrar otras particulas, cambia la masa de '13' en el .sh por la masa de la particula deseada
