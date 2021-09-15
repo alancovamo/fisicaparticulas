@@ -10,7 +10,7 @@ import csv
 import numpy as np      
 import matplotlib.pyplot as plt
 
-df=pd.read_table("datos_raw.csv",delimiter=',')
+df=pd.read_table("muones.csv",delimiter=',',header=None)
 df.rename(columns = {df.columns[0]:'datos'},inplace=True)
 
 df=df['datos'].str.split('  ',n=12,expand=True)
