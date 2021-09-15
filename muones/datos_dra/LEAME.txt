@@ -1,0 +1,1 @@
+El archivo juntarmumu.py si sirve para el dataset que nos proporcionó la Doctora Isabel.
