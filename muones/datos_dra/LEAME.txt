@@ -1,1 +1,1 @@
-El archivo juntarmumu.py si sirve para el dataset que nos proporcionó la Doctora Isabel.
+El archivo juntarmumu.py si sirve para el dataset que nos proporcionó la Doctora Isabel. Nos devuelve un csv llamado mu+mu- en el que cada renglón consta de 8 entradas, las 4 primeras corresponden al cuadrimomento de mu- y las otras 4 al cuadrimomento de mu+. 
