@@ -8,9 +8,9 @@ Created on Thu Sep  9 01:21:10 2021
 import pandas as pd
 import csv
 import numpy as np      
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-df=pd.read_table("datos_raw.csv",delimiter=',')
+df=pd.read_table("muones.csv",delimiter=',',header=None)
 df.rename(columns = {df.columns[0]:'datos'},inplace=True)
 
 df=df['datos'].str.split('  ',n=12,expand=True)
@@ -37,6 +37,26 @@ g.rename(columns= {g.columns[0]: 'masa',
 g.to_csv('datosprocesados.csv')
 
 print(g.head())
+
+plt.figure(0)
+plt.title('$P_x$')
+plt.plot(g['px'])
+
+
+plt.figure(1)
+plt.hist(g['px'])
+
+plt.figure(2)
+plt.xlabel('P_x')
+plt.ylabel('P_y')
+plt.plot(g['px'],g['py'])
+
+plt.figure(3)
+plt.title('Momento transverso')
+
+plt.hist(np.sqrt(g['px']**2+g['py']**2))
+plt.savefig("momentotransverso.png", type='png')
+
 
 
 #plt.figure(0)
