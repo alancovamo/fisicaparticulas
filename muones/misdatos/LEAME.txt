@@ -1,0 +1,25 @@
+
+
+1. Una vez que generaste los eventos, asegurate de tener el archivo unweighted_events.lhe.gz
+
+2. extrae todo lo de la carpeta misdatos en la ruta:
+
+   ../MG5_aMC_v*_*_x*/.../Events/run_**/
+   
+   (* hace referencia a la version de madrgaph y al numero de corrida)
+   
+2. Abres terminal en esa ubicación y pones:
+
+   chmod +x ejecutar.sh   
+
+3. Corre el programa procesardatos.sh desde terminal:
+
+   ./ejecutar.sh
+   
+
+4. Se genererarán dos csv, datos_raw y datosprocesados     
+
+
+Dependencias necesarias: numpy, pandas, matplotlib
+
+Este programa es solo para muones. Si quieres filtrar otras particulas, cambia la etiqueta de '13' en el .sh por la etiqueta de la particula deseada
