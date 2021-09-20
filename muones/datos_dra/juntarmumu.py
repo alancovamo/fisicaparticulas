@@ -24,9 +24,9 @@ df_2.rename(columns= {#df_2.columns[0]:'masa*',
                       df_2.columns[3]: 'E*'}, inplace=True)
 
 df_3=df_1.join(df_2)
-df_3.rename(columns= {df_3.columns[0]: 'E',
-                      df_3.columns[1]: 'px',
-                      df_3.columns[2]: 'py',
-                      df_3.columns[3]: 'pz',})
+df_3.rename(columns= {df_3.columns[0]: 'px',
+                      df_3.columns[1]: 'py',
+                      df_3.columns[2]: 'pz',
+                      df_3.columns[3]: 'E',})
 print(df_3.head())
 df_3.to_csv('mu+mu-.csv')
